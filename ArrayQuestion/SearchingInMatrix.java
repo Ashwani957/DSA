@@ -7,7 +7,7 @@ public class SearchingInMatrix {
         if(math==null || math.length==0 || math[0].length==0){
             return new int [] {-1,-1};
         }
-        int rows=math.length;
+        int rows=math.length; 
         int cols=math[0].length;
     int i = 0 ; 
     int j = cols-1;
@@ -19,11 +19,14 @@ public class SearchingInMatrix {
         if(val==target){
             return new int [] {i,j};
         }
+        
         // if the matrix value at mat[i][j] are bigger then we move to left 
         else if( val>target){
+            // cols will be minus 
             j--;
         }
         else {
+            // val<target 
             i++ ; // move down 
         }
 
