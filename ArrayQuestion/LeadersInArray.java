@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 //         System.out.println(Arrays.toString(leaderList.toArray()));
 //     }
 // }
-// optimal leaders 
+// optimal leaders :having a time complexity is O(N)
 public class LeadersInArray {
 
     public static List<Integer> leaders(int arr[]) {
